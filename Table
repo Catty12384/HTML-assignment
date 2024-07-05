@@ -1,0 +1,119 @@
+Table.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <table style="box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">
+        <thead>
+            <tr>
+                <th colspan="2"><p class="highlight1">My Day</p></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ol>
+                        <li>wake up early</li>
+                    </ol>
+                    <ul style="margin-left: 25px;">
+                        <li style="list-style: square;padding-bottom: 10px;">5AM</li>
+                        <li>walk</li>
+                        <li>jog</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol start="2">
+                        <li>breakfast</li>
+                    </ol>
+                    <ul style="margin-left: 25px;">
+                        <li style="list-style: square;padding-bottom: 10px;">8AM</li>
+                        <li>eggs</li>
+                        <li>coffee</li>
+                    </ul>
+                </td>
+                <td class="images" style="border: none; height: 150px; margin-top: -260px;">
+                    <table class="nested-table" style="width:100px;height: 150px">
+                        <thead>
+                            <th colspan="2">
+                                <p class="highlight2">Things to watch</p>
+                            </th>
+                        </thead>
+                        <tr>
+                            <td><img src="pic1.jpeg" alt="Image 1"></td>
+                            <td><img src="pic2.jpeg" alt="Image 2"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="pic3.jpeg" alt="Image 3"></td>
+                            <td><img src="pic4.jpeg" alt="Image 4"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol start="3">
+                        <li>go to Saveetha</li>
+                    </ol>
+                    <ul style="margin-left: 25px;">
+                        <li style="list-style: square;padding-bottom: 10px;">8AM</li>
+                        <li>attend classes</li>
+                        <li>to be continued</li>
+                    </ul>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+Table.css:
+
+table{
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 150px;
+}
+th{
+    text-align: center;
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+    padding-right: 20px;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+}
+.images img {
+    width: 125px;
+    height: 125px;    
+}
+.nested-table th, .nested-table td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+.highlight1{
+    background-color: yellow;
+    width:20%;
+    margin: auto;
+    padding: 2px;
+}
+.highlight2{
+    background-color: yellow;
+    width:50%;
+    margin: auto;
+}
